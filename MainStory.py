@@ -16,13 +16,21 @@ def MainStory ():
         PlayerCharacter.get_inventory
         PlayerItem.itemName = 'flashlight'
         player.add_item ('flashlight')
-        print (player.get_inventory())
+        print ("Your inventory now contains: " + str(player.get_inventory()))
 
     if (selection == 2):
         PlayerCharacter.get_inventory
         PlayerItem.itemName = 'medkit'
         player.add_item ('medkit')
-        print (player.get_inventory())
+        print ("Your inventory now contains: " + str(player.get_inventory()))
     
+    if (selection == 3):
+        PlayerCharacter.get_inventory
+        PlayerItem.itemName = 'compass'
+        player.add_item ('compass')
+        print ("Your inventory now contains: " + str(player.get_inventory()))
+
+
+
 Confirm_Setup()
 MainStory()
