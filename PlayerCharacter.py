@@ -26,10 +26,10 @@ class PlayerCharacter:
 
     def confirm_setup(self):
         """Confirm's Player's Choices"""
-        print("Your name is " + str(self.name) + ". " +
-              "You are a " + str(self.race) + "." +
-              "You have " + str(self.hitpoints) + " hitpoints." +
-              "Your inventory is empty." +
+        print("Your name is " + str(self.name) + ".\n" +
+              "You are a " + str(self.race) + ".\n" +
+              "You have " + str(self.hitpoints) + " hitpoints.\n" +
+              "Your inventory is empty.\n" +
               "_" * 80 + "\n")
 
     def get_name(self):

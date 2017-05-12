@@ -25,7 +25,6 @@ def game_loop():
         if selection is 2:
             print ("This game was developed by Brian Kordek " +
                    "with generous assistance from Kolby Heacock.")
-            exit_status = True
         if selection is 3:
             exit_status = True
 
