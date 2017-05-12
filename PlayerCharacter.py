@@ -7,8 +7,10 @@ class PlayerCharacter:
         self.inventory= []
         self.name = name
         self.name = input ("What is your name?\n> ")
-        print ("Your name is " + str(self.name) + ".")
         self.race = race
+
+    def race_select(self):
+        """Selecting the Player Race"""
         print ("Please choose your race: ")
         race_menu = ("Human", "Xeno", "Synthetic")
         selection = menu(race_menu)
@@ -18,6 +20,12 @@ class PlayerCharacter:
             self.race = 'Xeno'
         if (selection == 3):
             self.race = 'Synthetic'
+
+    def confirm_setup (self):
+        """Confirm's Player's Choices"""
+        print ("Your name is " + str(self.name) + ". You are a " + str(self.race) + ".")
+        print ("You have " + str(self.hitpoints) + " hitpoints. Your inventory is empty.")
+        print ("____________________________________________________________________________\n")
 	
     def get_name(self):
         """returns player name"""
@@ -43,4 +51,14 @@ class PlayerCharacter:
     
     def set_race(self, new_race):
         self.race = new_race
+    
+    def check_inventory(self, item):
+        for check_item in self.inventory:
+            if check_item == item:
+                return True
+
+        return False
+	
+    
+    
 	
