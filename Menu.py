@@ -17,9 +17,8 @@ def menu(options):
     1
     """
 
-    error_invalid_option = 'Enter a value between 1 - '
-    error_invalid_option += str(len(options))
-    error_invalid_option += '.'
+    error_invalid_option = ('Enter a value between 1 - '
+                            + str(len(options)) + '.')
     acceptable_answer_range = range(1, (len(options) + 1))
     selection_chosen = False
 
