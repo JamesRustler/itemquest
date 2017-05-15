@@ -39,11 +39,18 @@ def main_story(player):
         print("You go east, moving into the forest at a brisk walk. " +
               "Shortly after passing the tree-line you find yourself " +
               "in near-pitch darkness. Luminescent vegitation provides " +
-              "the only light.")
-        selection = menu(("yes", "no"))
+              "the only light. Do you turn on your flashlight?")
+        yn_menu = ("yes", "no")
+        selection = menu(yn_menu)
         player.check_inventory("flashlight")
-        if selection is 1:
-            if player.check_inventory is True:
-                print("You flick on the flashlight!")
-            if player.check_inventory is False:
-                print("Booooo")
+        if (selection == 1):
+            if "flashlight" in player.inventory:
+                print ("You flick on the flashlight!")
+            else:
+                player.hitpoints -= 10
+                print ("You go to turn on your flashlight and realize that you do not have one! " + 
+		"A tentacled creature leaps from the darkness and attacks you! You fight it off, but not without taking damage. " +
+		"You now have " + str(player.hitpoints) + " hitpoints.")
+        if (selection == 2):
+            if "flashlight" in player.inventory:
+               	pass 
