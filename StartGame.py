@@ -2,7 +2,7 @@
 """ game desc"""
 
 from Menu import menu
-from MainStory import main_story
+from MainStory import intro_story
 from PlayerCharacter import PlayerCharacter
 
 
@@ -20,7 +20,7 @@ def game_loop():
             player = PlayerCharacter()
             player.race_select()
             player.confirm_setup()
-            main_story(player)
+            intro_story(player)
             exit_status = True
         if selection is 2:
             print ("This game was developed by Brian Kordek " +
