@@ -51,6 +51,10 @@ class PlayerCharacter:
     def add_item(self, new_item):
         """add item to the player's inventory"""
         self.inventory.append(new_item)
+    
+    def remove_item(self, new_item):
+        """remove item from player's inventory"""
+        self.inventory.remove(new_item)
 
     def get_race(self):
         """gets the player's race"""

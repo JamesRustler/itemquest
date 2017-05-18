@@ -24,7 +24,7 @@ def game_loop():
             exit_status = True
         if selection is 2:
             print ("This game was developed by Brian Kordek " +
-                   "with generous assistance from Kolby Heacock.")
+                   "with generous assistance from Kolby Heacock, Jonathan Maudlin, and Alexander Pullman. Honorable mention to Samuel Guthrie and Daniel Persinger for moral support")
         if selection is 3:
             exit_status = True
 
